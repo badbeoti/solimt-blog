@@ -3,9 +3,9 @@
   "private": true,
   "description": "Gatsby blog starter template",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "solimt[badbeoti]<crab4251@gmail.com>",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/badbeoti/solimt-blog/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -67,7 +67,7 @@
     "recursive-readdir": "^2.2.2",
     "signale": "^1.3.0"
   },
-  "homepage": "https://github.com/JaeYeopHan/gatsby-starter-bee#readme",
+  "homepage": "https://github.com/badbeoti/solimt-blog",
   "keywords": [
     "gatsby"
   ],
