@@ -1,14 +1,16 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import { rhythm } from '../utils/typography'
 import * as Lang from '../constants'
+
+import { IoHome } from 'react-icons/io5'
 
 export default ({ data }) => {
   const resumes = data.allMarkdownRemark.edges
 
   const resume = resumes
-    .filter(({ node }) => node.frontmatter.lang === Lang.ENGLISH)
+    .filter(({ node }) => node.frontmatter.lang === Lang.KOREAN)
     .map(({ node }) => node)[0]
 
   return (
@@ -16,12 +18,15 @@ export default ({ data }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
+        maxWidth: rhythm(30),
+        padding: `${rhythm(1)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
           3 / 4
         )}`,
       }}
     >
+      <Link to="/">
+        <IoHome size={24} className="about-home-icon" />
+      </Link>
       <div dangerouslySetInnerHTML={{ __html: resume.html }} />
     </div>
   )

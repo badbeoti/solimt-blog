@@ -27,7 +27,7 @@ pre[class*='language-'] {
   color: #e0e0e0;
   background: none;
   font-family: 'Fira Code', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono',
-    monospace;
+  monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -137,6 +137,7 @@ pre[class*='language-'] {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
